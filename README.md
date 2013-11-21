@@ -13,11 +13,11 @@ In order to avoid a graph that is too regular, we introduce randomness at two le
 Usage
 =====
 
-num_data_points = 100
-grapherator = Grapherator.new(num_data_points, {})
-grapherator.generate! # => returns [] of 0..num_data_points of psuedo-random numbers that follow a sinusoidal function
+    num_data_points = 100
+    grapherator = Grapherator.new(num_data_points, {})
+    grapherator.generate! # => returns [] of 0..num_data_points of psuedo-random numbers that follow a sinusoidal function
 
-# output string that can be entered into the Google charts playground
-# here: https://code.google.com/apis/ajax/playground/?type=visualization#line_chart
-grapherator.google_charts_code 
+    # output string that can be entered into the Google charts playground 
+    # here: https://code.google.com/apis/ajax/playground/?type=visualization#line_chart
+    grapherator.google_charts_code 
 
