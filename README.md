@@ -8,3 +8,16 @@ In order to avoid a graph that is too regular, we introduce randomness at two le
 
 1. The delta between steps across the x-axis is random, but within a range(deltavariance). 
 2. The wavelength of the sine function is varied by randomly incrementing the index we pass to the sine function(sine_index)
+
+
+Usage
+=====
+
+num_data_points = 100
+grapherator = Grapherator.new(num_data_points, {})
+grapherator.generate! # => returns [] of 0..num_data_points of psuedo-random numbers that follow a sinusoidal function
+
+# output string that can be entered into the Google charts playground
+# here: https://code.google.com/apis/ajax/playground/?type=visualization#line_chart
+grapherator.google_charts_code 
+
